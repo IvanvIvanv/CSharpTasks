@@ -21,13 +21,23 @@ namespace NUnitTask
         [Test]
         public void SumTest()
         {
-            Assert.That(processor!.CalculateSum(), Is.EqualTo(6));
+            Assert.Multiple(() =>
+            {
+                Assert.That(numberService?.GetIntArray(), Is.Not.Null);
+                Assert.That(numberService?.GetIntArray(), Has.Length.Positive);
+                Assert.That(processor?.CalculateSum(), Is.EqualTo(6));
+            });
         }
 
         [Test]
         public void AverageTest()
         {
-            Assert.That(processor!.CalculateAverage(), Is.EqualTo(2f));
+            Assert.Multiple(() =>
+            {
+                Assert.That(numberService?.GetIntArray(), Is.Not.Null);
+                Assert.That(numberService?.GetIntArray(), Has.Length.Positive);
+                Assert.That(processor?.CalculateAverage(), Is.EqualTo(2f));
+            });
         }
     }
 }
