@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorTask", "Calculato
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxingAndGenerics", "BoxingAndGenerics\BoxingAndGenerics.csproj", "{8BD49AE1-B828-4166-AEAB-EF55D89263A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTask", "NUnitTask\NUnitTask.csproj", "{DF330979-0175-41FA-9968-7A1C186D872C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTask", "NUnitTask\NUnitTask.csproj", "{DF330979-0175-41FA-9968-7A1C186D872C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTaskLibrary", "NUnitTaskLibrary\NUnitTaskLibrary.csproj", "{905E2289-7BFC-45C4-BB5E-29325AF9DAE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitTaskLibrary", "NUnitTaskLibrary\NUnitTaskLibrary.csproj", "{905E2289-7BFC-45C4-BB5E-29325AF9DAE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadTask", "OverloadTask\OverloadTask.csproj", "{F2BA6AB2-7190-4A9B-916C-ACF87398A092}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{905E2289-7BFC-45C4-BB5E-29325AF9DAE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905E2289-7BFC-45C4-BB5E-29325AF9DAE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{905E2289-7BFC-45C4-BB5E-29325AF9DAE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BA6AB2-7190-4A9B-916C-ACF87398A092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BA6AB2-7190-4A9B-916C-ACF87398A092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BA6AB2-7190-4A9B-916C-ACF87398A092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BA6AB2-7190-4A9B-916C-ACF87398A092}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
