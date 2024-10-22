@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Delegates
 {
-    public static class Calculator
+    public static class Calc
     {
-        public delegate int FactorialDelegate<T>(T num);
-        public delegate int NumSumDelegate<T>(T num);
-        public delegate int NumMultDelegate<T>(T num);
-        public delegate void NumSumPrintDelegate<T>(T num);
-        public delegate void NumMultPrintDelegate<T>(T num);
+        public delegate int FuncDelegate<T>(T num);
+        public delegate void ActionDelegate<T>(T num);
 
         public static int Factorial(int num)
         {
@@ -51,11 +48,10 @@ namespace Delegates
             return res;
         }
 
-        public static float NumSum(float num)
+        public static int NumSum(float num)
         {
             int res = 0;
             List<byte> digits = DigitsOf(num);
-
             foreach (var digit in digits)
             {
                 res += digit;
@@ -95,7 +91,17 @@ namespace Delegates
             Console.WriteLine(NumSum(num));
         }
 
+        public static void PrintNumSum(float num)
+        {
+            Console.WriteLine(NumSum(num));
+        }
+
         public static void PrintNumMult(int num)
+        {
+            Console.WriteLine(NumMult(num));
+        }
+
+        public static void PrintNumMult(float num)
         {
             Console.WriteLine(NumMult(num));
         }
@@ -111,6 +117,28 @@ namespace Delegates
             return true;
         }
 
+        public static int EvenSumOddMult(int num)
+        {
+            if (num % 2 == 0) return NumSum(num);
+            else return NumMult(num);
+        }
+
+        public static int EvenSumOddMult(float num)
+        {
+            if (num % 2 == 0) return NumSum(num);
+            else return NumMult(num);
+        }
+
+        public static FuncDelegate<int> GetEventSumOddMultDelegateInt()
+        {
+            return new(EvenSumOddMult);
+        }
+
+        public static FuncDelegate<float> GetEventSumOddMultDelegateFloat()
+        {
+            return new(EvenSumOddMult);
+        }
+
         public static List<byte> DigitsOf(int num)
         {
             return num.ToString().ToList().ConvertAll(x => (byte)(x - 48));
@@ -119,7 +147,7 @@ namespace Delegates
         public static List<byte> DigitsOf(float num)
         {
             List<char> chars = [.. num.ToString()];
-            chars.Remove('.');
+            chars.Remove(',');
             return chars.ConvertAll(x => (byte)(x - 48));
         }
 
@@ -129,7 +157,7 @@ namespace Delegates
 
             for (int i = 0; i < digits.Count; i++)
             {
-                res += (int)(digits[i] * Math.Pow(10, i));
+                res += (int)(digits[i] * Math.Pow(10, digits.Count - i - 1));
             }
 
             return res;
