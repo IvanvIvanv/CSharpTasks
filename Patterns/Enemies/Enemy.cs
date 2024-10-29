@@ -8,6 +8,6 @@ namespace Patterns.Enemies
 {
     internal abstract class Enemy
     {
-
+        public abstract Enemy Clone();
     }
 }

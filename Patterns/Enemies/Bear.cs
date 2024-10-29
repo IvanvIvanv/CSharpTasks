@@ -8,6 +8,9 @@ namespace Patterns.Enemies
 {
     internal class Bear : Enemy
     {
-
+        public override Enemy Clone()
+        {
+            return new Bear();
+        }
     }
 }

@@ -4,12 +4,13 @@ namespace Patterns
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Input difficulty from 1 to 3");
+            Console.WriteLine($"Input difficulty from 1 to {NumDifficultyFactory.difficulties.Length}");
             int difficultyNum = Convert.ToInt32(Console.ReadLine());
-            var difficulty = Difficulty.Factory.Create(difficultyNum);
+            var difficulty = NumDifficultyFactory.Create(difficultyNum);
             Wave wave = new(difficulty);
+            Console.WriteLine(wave.ToString());
         }
     }
 }
