@@ -3,66 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpTasks", "CSharpTasks", "{172F6E6B-2145-4063-8817-11620FD9B73B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task5_Delegates", "Task5_Delegates", "{7DC8299A-953F-4E6C-AEFF-629D89B61FE8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Task5_Delegates\Delegates\Delegates.csproj", "{35012AF7-C70B-43FF-8D51-6CEA121FAAB6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task4_ClassHierarchy", "Task4_ClassHierarchy", "{F2E7CC7E-18A3-42AA-B18A-5F3C82A359FE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassHierarchy", "Task4_ClassHierarchy\ClassHierarchy\ClassHierarchy.csproj", "{EABAC604-F473-4632-A9E0-B56E396AA119}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3_GenericClass", "Task3_GenericClass", "{BA2192E9-5F35-416E-8ACA-4323A4FE326C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoxingAndGenerics", "Task3_GenericClass\BoxingAndGenerics\BoxingAndGenerics.csproj", "{A4330F3C-14B6-45FA-80EA-4B7F1749BCEC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2_CatClassification", "Task2_CatClassification", "{D80D9E40-5C48-4A3D-B45D-5FA09E4A3C00}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VinogradovIE_CatFramework", "Task2_CatClassification\VinogradovIE_CatFramework\VinogradovIE_CatFramework.csproj", "{47C0EF85-28D7-4CB0-8BCB-B3B70046F0F3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VinogradovIE_CatApplication", "Task2_CatClassification\VinogradovIE_CatApplication\VinogradovIE_CatApplication.csproj", "{AC2872DA-DCCC-4898-A1D0-5C849EE1408B}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task6_Patterns", "Task6_Patterns", "{AC3158F5-245C-4F2F-9840-3E7F32FE7425}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patterns", "Patterns\Patterns.csproj", "{EBF38F71-FAA8-4ACE-BC77-C56F6437FBC0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task7_PatternsFromUML", "Task7_PatternsFromUML", "{920757B9-1FB2-4C1D-886E-09D9A311F948}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prototype", "Prototype\Prototype.csproj", "{7A34F944-E93C-4B80-AE0C-8F5B33BAF4A2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{E981ACDB-69FC-4F2F-B3C3-922D94C900A4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Builder", "Builder\Builder.csproj", "{49D19E23-D5A7-476D-B394-97518F39EC02}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{34175E2E-FF88-4EFC-8A83-FFF8B36B867F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task8_BehaviourPatterns", "Task8_BehaviourPatterns", "{0BB0D47D-C47F-4780-9C14-4D025380207F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{71E5AF37-AB7E-4191-8602-EEF64E9C393A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern", "Memento\MementoPattern.csproj", "{A00C3757-E0C9-473B-8DF2-120DE77B6F90}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task9_SmartHomeTask", "Task9_SmartHomeTask", "{7B0B758C-66D2-415A-A610-E8009F3913DE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartHomeTask", "SmartHome\SmartHomeTask.csproj", "{C2636495-F5E8-494D-A482-282FD554D8C2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task10_PatternsFinal", "Task10_PatternsFinal", "{0C8491EE-B088-4B7E-9898-53645BF6C812}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3DobjectsTask", "3DobjectsTask\3DobjectsTask.csproj", "{F5CC90DB-A623-4848-AA8F-8162F2499C9D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeMachineTask", "CoffeeMachineTask\CoffeeMachineTask.csproj", "{2696F8E4-FC1A-452F-926D-985299CD3056}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatTask", "ChatTask\ChatTask.csproj", "{3167FDB0-75DA-46E2-9AB5-8D73802E411E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodOrderTask", "FoodOrderTask\FoodOrderTask.csproj", "{7187BF85-BE24-45D2-9671-859A722F7990}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyTask", "ProxyTask\ProxyTask.csproj", "{3828FF67-B6FE-47A6-AE07-22B12AE43620}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task11_ConsoleRPG", "Task11_ConsoleRPG", "{DF451734-B793-46A5-A836-448C55EA4E5E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRPG", "ConsoleRPG\ConsoleRPG.csproj", "{3B9D245D-8B8A-4EAD-8141-B9039B44BE20}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
