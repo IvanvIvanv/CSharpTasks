@@ -9,7 +9,7 @@ namespace ConsoleRPG.GameStates
     using ConsoleRPG.Players;
     using StateMachines;
 
-    internal class ClassSelectionState : State
+    internal class ClassSelectionState(GameStateContext context) : State
     {
         private static readonly PlayerStats[] PLAYER_CLASSES =
             [
@@ -17,13 +17,6 @@ namespace ConsoleRPG.GameStates
                 new MageStats(),
                 new ArcherStats(),
             ];
-
-        private PlayerBuilder? playerBuilder;
-
-        public void Construct(PlayerBuilder playerBuilder)
-        {
-            this.playerBuilder = playerBuilder;
-        }
 
         public override void Start()
         {
@@ -36,16 +29,16 @@ namespace ConsoleRPG.GameStates
                     Console.WriteLine("{0} - {1}", i, PLAYER_CLASSES[i].Name);
                 }
 
-                Console.Write("Input class of character: ");
+                Console.Write("Input class of character to view it's stats: ");
                 string input = Console.ReadLine()!;
                 Console.WriteLine();
 
                 if (!int.TryParse(input, out characterClassNum)) continue;
             }
 
-            playerBuilder?.WithStats(PLAYER_CLASSES[characterClassNum]);
-            var enemyEncounterState = stateMachine!.GetCachedState<EnemyEncounterState>();
-            stateMachine!.ChangeState(enemyEncounterState);
+            context.playerBuilder!.WithStats(PLAYER_CLASSES[characterClassNum]);
+            context.player = context!.playerBuilder!.Build();
+            stateMachine!.ChangeState<ClassConfirmationState>();
         }
     }
 }

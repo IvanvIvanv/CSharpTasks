@@ -9,21 +9,24 @@ namespace ConsoleRPG.Players
     internal class PlayerBuilder
     {
         private string name = string.Empty;
-        private PlayerStats? playerStats;
+        private PlayerStats? stats;
+
+        public string Name => name;
+        public PlayerStats? Stats => stats;
 
         public void WithName(string name)
         {
             this.name = name;
         }
 
-        public void WithStats(PlayerStats playerStats)
+        public void WithStats(PlayerStats stats)
         {
-            this.playerStats = playerStats;
+            this.stats = stats;
         }
 
         public Player Build()
         {
-            return new Player(playerStats!, name!);
+            return new Player(stats!, name!);
         }
     }
 }

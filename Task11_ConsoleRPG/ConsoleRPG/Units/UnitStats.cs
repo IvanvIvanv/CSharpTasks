@@ -18,7 +18,7 @@ namespace ConsoleRPG.Units
             stringBuilder.AppendLine("-----Stats-----");
             stringBuilder.AppendLine($"Max health: {MaxHealth}");
             stringBuilder.AppendLine($"Strength: {Strength}");
-            stringBuilder.AppendLine($"CriticalChance: {CriticalChance}");
+            stringBuilder.Append($"Critical chance: {CriticalChance}");
             return stringBuilder.ToString();
         }
     }

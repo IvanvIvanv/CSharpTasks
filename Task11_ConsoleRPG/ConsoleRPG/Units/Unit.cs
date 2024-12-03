@@ -27,15 +27,24 @@ namespace ConsoleRPG.Units
             {
                 health = value;
                 if (health > stats.MaxHealth) health = stats.MaxHealth;
+                else if (health < 0) health = 0;
             }
         }
 
-        public virtual void Attack(Unit target)
+        public virtual AttackResults Attack(Unit target)
         {
             bool isCritical = RND.Next(0, 101) < stats.CriticalChance;
             int damage = stats.Strength;
             if (isCritical) damage *= 3;
             target.Health -= damage;
+
+            return new()
+            {
+                wasCritical = isCritical,
+                damageDealt = damage,
+                targetMaxHealth = target.stats.MaxHealth,
+                targetCurrentHealth = target.Health,
+            };
         }
     }
 }

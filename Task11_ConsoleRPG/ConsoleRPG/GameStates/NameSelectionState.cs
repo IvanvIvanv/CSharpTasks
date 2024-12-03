@@ -6,22 +6,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleRPG.GameStates
 {
-    using ConsoleRPG.Players;
     using StateMachines;
 
-    internal class NameSelectionState : State
+    internal class NameSelectionState(GameStateContext context) : State
     {
-        private readonly PlayerBuilder playerBuilder = new();
-
         public override void Start()
         {
             Console.Write("Input name of character: ");
             string input = Console.ReadLine()!;
             Console.WriteLine();
-            playerBuilder.WithName(input);
-            var classSelectionState = stateMachine!.GetCachedState<ClassSelectionState>();
-            classSelectionState.Construct(playerBuilder);
-            stateMachine!.ChangeState(classSelectionState);
+            context.playerBuilder.WithName(input);
+            stateMachine!.ChangeState<ClassSelectionState>();
         }
     }
 }

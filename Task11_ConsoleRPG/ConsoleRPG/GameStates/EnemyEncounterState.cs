@@ -7,24 +7,16 @@ using System.Threading.Tasks;
 namespace ConsoleRPG.GameStates
 {
     using StateMachines;
-    using Players;
-    using ConsoleRPG.Enemies;
+    using Enemies;
 
-    internal class EnemyEncounterState : State
+    internal class EnemyEncounterState(GameStateContext context) : State
     {
-        private Player? player;
-
-        public void Construct(Player player)
-        {
-            this.player = player;
-        }
-
         public override void Start()
         {
             EnemyStats enemyStats = new();
-
             Console.WriteLine("You have encountered an enemy");
             Console.WriteLine(enemyStats.ToString());
+            context.currentEnemy = new Enemy(enemyStats);
         }
     }
 }

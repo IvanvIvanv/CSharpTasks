@@ -7,10 +7,12 @@
     {
         static void Main()
         {
+            GameStateContext context = new();
             StateMachine gameStateMachine = new([
-                new NameSelectionState(),
-                new ClassSelectionState(),
-                new EnemyEncounterState(),
+                new NameSelectionState(context),
+                new ClassSelectionState(context),
+                new ClassConfirmationState(context),
+                new EnemyEncounterState(context),
             ]);
 
             gameStateMachine.ChangeState<NameSelectionState>();
