@@ -12,13 +12,14 @@ namespace ConsoleRPG.Units
         public int damageDealt;
         public int targetMaxHealth;
         public int targetCurrentHealth;
+        public string targetName;
 
         public override string ToString()
         {
             StringBuilder builder = new();
             builder.AppendLine("-----Attack results-----");
             if (wasCritical) builder.AppendLine("Critical hit!");
-            builder.AppendLine($"Target received {damageDealt} damage");
+            builder.AppendLine($"{targetName} received {damageDealt} damage");
             builder.Append($"Health: {targetCurrentHealth}/{targetMaxHealth}");
             return builder.ToString();
         }

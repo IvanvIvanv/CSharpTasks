@@ -7,11 +7,8 @@ using ConsoleRPG.Units;
 
 namespace ConsoleRPG.Enemies
 {
-    internal class Enemy : Unit
+    internal class Enemy(UnitStats stats) : Unit(stats)
     {
-        public Enemy(UnitStats stats) : base(stats)
-        {
-
-        }
+        public override string Name => "Enemy";
     }
 }

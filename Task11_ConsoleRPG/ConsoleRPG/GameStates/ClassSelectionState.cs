@@ -8,6 +8,7 @@ namespace ConsoleRPG.GameStates
 {
     using ConsoleRPG.Players;
     using StateMachines;
+    using System.Diagnostics;
 
     internal class ClassSelectionState(GameStateContext context) : State
     {
@@ -33,7 +34,7 @@ namespace ConsoleRPG.GameStates
                 string input = Console.ReadLine()!;
                 Console.WriteLine();
 
-                if (!int.TryParse(input, out characterClassNum)) continue;
+                if (int.TryParse(input, out int inputNum)) characterClassNum = inputNum;
             }
 
             context.playerBuilder!.WithStats(PLAYER_CLASSES[characterClassNum]);

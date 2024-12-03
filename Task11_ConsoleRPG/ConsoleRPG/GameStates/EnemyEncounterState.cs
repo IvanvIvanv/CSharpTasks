@@ -16,7 +16,9 @@ namespace ConsoleRPG.GameStates
             EnemyStats enemyStats = new();
             Console.WriteLine("You have encountered an enemy");
             Console.WriteLine(enemyStats.ToString());
+            Console.WriteLine();
             context.currentEnemy = new Enemy(enemyStats);
+            stateMachine!.ChangeState<PlayerTurnState>();
         }
     }
 }

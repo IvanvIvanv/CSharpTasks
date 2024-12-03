@@ -20,6 +20,8 @@ namespace ConsoleRPG.Units
             Health = stats.MaxHealth;
         }
 
+        public abstract string Name { get; }
+
         public int Health
         {
             get => health;
@@ -44,6 +46,7 @@ namespace ConsoleRPG.Units
                 damageDealt = damage,
                 targetMaxHealth = target.stats.MaxHealth,
                 targetCurrentHealth = target.Health,
+                targetName = target.Name,
             };
         }
     }
