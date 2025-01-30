@@ -7,7 +7,7 @@ using System.Numerics;
 
 namespace AbstractionsTask
 {
-    public class Quadrilateral
+    public class Quadrilateral : ITetragon
     {
         public double sideA = 10;
         public double sideB = 10;
@@ -30,7 +30,7 @@ namespace AbstractionsTask
                     SubtractFromSemiPerimeter(sideD);
 
                 double sidesMultiplied = sideA * sideB * sideC * sideD;
-                double angleAYCos = Math.Cos((angleA + angleC) / 2);
+                double angleAYCos = Math.Cos((Math.PI / 180 * angleA + Math.PI / 180 * angleC) / 2);
                 return Math.Sqrt(semiPerimeterSidesMultiplied - sidesMultiplied * angleAYCos * angleAYCos);
 
                 double SubtractFromSemiPerimeter(double num) => semiPerimeter - num;

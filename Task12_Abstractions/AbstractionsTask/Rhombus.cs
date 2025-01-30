@@ -9,6 +9,6 @@ namespace AbstractionsTask
     public class Rhombus : Parallelogram
     {
         public override double Perimeter => sideA * 4;
-        public override double Area => sideA * sideA * Math.Sin(angleA);
+        public override double Area => sideA * sideA * Math.Sin(Math.PI / 180 * angleA);
     }
 }

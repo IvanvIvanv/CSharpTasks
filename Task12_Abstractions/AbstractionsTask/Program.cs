@@ -1,7 +1,15 @@
-﻿internal class Program
+﻿namespace AbstractionsTask
 {
-    private static void Main(string[] args)
+    internal class Program
     {
-        Console.WriteLine("Hello, World!");
+        private static void Main(string[] args)
+        {
+            List<ITetragon> tetragons = [new Quadrilateral(), new Square(), new Rhombus()];
+
+            foreach (var tetragon in tetragons)
+            {
+                Console.WriteLine(tetragon.Area);
+            }
+        }
     }
 }
