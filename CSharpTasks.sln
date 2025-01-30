@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTask", "Learning1_Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSTestTask", "Learning1_UnitTesting\MSTest\MSTestTask.csproj", "{860182AB-B015-4D22-8E5E-F0AAA21111FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractionsTask", "AbstractionsTask\AbstractionsTask.csproj", "{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{860182AB-B015-4D22-8E5E-F0AAA21111FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{860182AB-B015-4D22-8E5E-F0AAA21111FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{860182AB-B015-4D22-8E5E-F0AAA21111FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -203,6 +209,7 @@ Global
 		{206F194C-933E-4A8C-BBF9-5D0600E95B27} = {F9D0C37A-169E-4FC9-B347-A08347E92801}
 		{D4423B23-D597-4A70-9F19-4D01E51E2AB0} = {F9D0C37A-169E-4FC9-B347-A08347E92801}
 		{860182AB-B015-4D22-8E5E-F0AAA21111FD} = {F9D0C37A-169E-4FC9-B347-A08347E92801}
+		{BE0BB1D3-4562-4F58-B1F6-AB9EC817304E} = {C3392864-4CB4-41E7-A620-99AB9956E5F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E64D15EB-8ECC-4415-99A6-D821066AA323}
